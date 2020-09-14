@@ -3,7 +3,7 @@ function link_u_register_sidebars(){
     if(function_exists('register_sidebar')){
         register_sidebar(array(
             'id'=>'sidebar-droite',
-            'name'=>'Barre latérale principale',
+            'name'=>'Barre latérale droite',
             'description' => 'Colonne de widget qui apparait à droite',
             'before_widget'=>'',
             'after_widget'=>'',
@@ -14,8 +14,8 @@ function link_u_register_sidebars(){
             'id'=>'sidebar-gauche',
             'name'=>'Barre latérale gauche',
             'description' => 'Emplacement de widget à gauche du contenu',
-            'before_widget'=>'<div class="widget-gauche">',
-            'after_widget'=>'</div>',
+            'before_widget'=>'',
+            'after_widget'=>'',
             'before_title' =>'<h3>',
             'after_title' =>'</h3>'
         ));
