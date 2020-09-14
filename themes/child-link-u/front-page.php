@@ -1,7 +1,7 @@
 <?php
 // get_header();
 // Sidebar gauche
-get_sidebar('sidebar-gauche');
+get_sidebar('gauche');
 // Content
 	// Sidebar gauche
 		// Et droite
@@ -21,5 +21,5 @@ endif;
 
 
 // Sidebar droite
-get_sidebar('sidebar-droite');
+get_sidebar('droite');
 // get_footer();
