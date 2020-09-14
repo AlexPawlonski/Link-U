@@ -6,9 +6,9 @@ Template: twentynineteen
 */
 body{
 margin:auto;
+padding: 0;
 }
-/*COUCOU*/
-h2 {
-	color: purple;
+#wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 }
-/* OUCOUC */
