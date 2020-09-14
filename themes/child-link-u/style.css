@@ -4,4 +4,6 @@ Description: Thème enfant de twentynineteen
 Author: Cefii
 Template: twentynineteen
 */
-
+h2 {
+	color: purple;
+}
