@@ -5,8 +5,13 @@ Author: Cefii
 Template: twentynineteen
 */
 
-h2 {
-	color: purple;
+
+
+.site-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 /* SIDEBARS */
 .sidebar{
@@ -35,10 +40,10 @@ h2 {
 
 
 /* *************************Front Page****************Vincent*********** */
-.avecSideBar {
+.frontPageContent {
 	width: 70%;
 }
-.frontPageContent~h2 {
+.frontPageContent>h2 {
 	text-align: center;
 	background-color: rgb(88, 107, 168);
 	padding: 0.3em;
@@ -46,7 +51,7 @@ h2 {
 	color: white;
 	font-weight: 100;
 }
-.frontPageContent~h2:before{
+.frontPageContent>h2:before{
 	display: none;
 }
 .wc-block-grid__product-onsale{
@@ -70,3 +75,16 @@ h2 {
 	height: 300px;
 }
 
+
+
+
+
+
+@media screen and (min-width: 700px){
+
+
+
+
+
+	
+}
