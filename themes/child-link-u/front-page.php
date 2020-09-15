@@ -1,7 +1,7 @@
 <?php
 get_header();
 // Sidebar gauche
-get_sidebar('accueil');
+get_sidebar();
 // Content
 
 // Sidebar gauche
