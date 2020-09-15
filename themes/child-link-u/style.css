@@ -4,11 +4,13 @@ Description: Thème enfant de twentynineteen
 Author: Cefii
 Template: twentynineteen
 */
-body{
-margin:none;
+
+.content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-/*COUCOU*/
-h2 {
-	color: purple;
+.pageTitle {
+	font-size: 0.5em;
 }
-/* OUCOUC */
+
