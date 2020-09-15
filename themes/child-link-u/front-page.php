@@ -1,7 +1,7 @@
 <?php
 // get_header();
 // Sidebar gauche
-get_sidebar('gauche');
+get_sidebar('accueil');
 // Content
 	// Sidebar gauche
 		// Et droite
@@ -16,15 +16,10 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 <h3><?php the_title(); ?></h3>
 <p><?php the_content(); ?></p>
 </div>
-
-
 <?php
 endwhile;
 endif;
 
 // Les promotions
-
-
 // Sidebar droite
-get_sidebar();
 // get_footer();
