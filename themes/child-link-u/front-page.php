@@ -3,11 +3,11 @@ get_header();
 if(is_active_sidebar( 'gauche' )){
 	// Sidebar gauche
 	get_sidebar('gauche');
-	?><div class="content avecSidebarGauche"><?php
+	?><div class="frontPageContent avecSidebarGauche"><?php
 }
 else{
 	// !Sidebar gauche
-	?><div class="content"></div><?php
+	?><div class="frontPageContent"></div><?php
 }
 
 // Les dernières actualités
@@ -20,12 +20,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 endwhile;
 endif;
 
-// Les promotions
 
-
-// Sidebar droite
-get_sidebar();
 ?>
-</div><!-- fermeture content -->
+</div><!-- fermeture frontPageContent -->
 <?php
 get_footer();
