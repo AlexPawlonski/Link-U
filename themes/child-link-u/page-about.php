@@ -1,20 +1,15 @@
 <?php
 get_header();
-// Sidebar gauche
-// Content
 
-// Sidebar gauche
-?><div class="aboutContent"><?php
+	?>
+<div class="aboutContent">
+	<?php
+	if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<p><?php the_content(); ?></p>
 
-
-
-// Les dernières actualités
-if (have_posts()) : while (have_posts()) : the_post(); ?>
-<p><?php the_content(); ?></p>
-</div><!-- fermeture frontPageContent -->
+</div><!-- fermeture aboutContent -->
 <?php
 endwhile;
 endif;
 
-// Sidebar droite
 get_footer();

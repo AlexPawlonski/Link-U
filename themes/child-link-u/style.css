@@ -13,7 +13,7 @@ Template: twentynineteen
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
-/* SIDEBARS */
+/* *************************SIDEBARS**********************Gabriel***** */
 .sidebar{
 	width: 15%;
 	border: 1px solid cyan;
@@ -108,6 +108,9 @@ Idem pour les partenaires de la pageContact */
 
 
 /* *************************Qui sommes nous*******************Vincent******** */
+.aboutContent h2 {
+
+}
 .aboutContent {
 	padding: 1em;
 }
