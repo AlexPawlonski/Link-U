@@ -23,6 +23,23 @@ Template: twentynineteen
 }
 .sidebar-boutique{
 	border: none;
+	background-color: darkgray;
+}
+/*
+code pour widget téléphone->html personalisé
+<div class="contactTelWidget">
+	<i class="fas fa-phone-alt "></i>
+	<span>0606060606</span>
+</div> */
+.contactTelWidget{
+	color: rgb(53, 196, 196);
+	font-weight: bolder;
+	font-size: 2em;
+	display: flex;
+	align-items: center;
+}
+.contactTelWidget .fas{
+	width:25%
 }
 .sidebar li{
 	display:flex;
@@ -36,7 +53,21 @@ Template: twentynineteen
 .sidebar .product-title{
 	width:100%
 }
+/* 
+Pour le widget de la page décoration utiliser le menu de navigation et appliquer les classes css via les liens personnalisés 
+(cases options a cochéspour faire apparaitre les champs et ajouter la classe menutestbcg
+Idem pour les partenaires de la pageContact */
 
+.menutestbcg a{
+	padding-top:10em;
+	text-align:center;
+}
+.menutestbcg{
+	background-image:url(images/Capture.png);
+	background-position: center  ;
+	background-size:50%;
+	background-repeat: no-repeat;
+}
 
 
 /* *************************Front Page****************Vincent*********** */
