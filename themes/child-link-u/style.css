@@ -109,7 +109,15 @@ Idem pour les partenaires de la pageContact */
 
 /* *************************Qui sommes nous*******************Vincent******** */
 .aboutContent h2 {
-
+	text-align: center;
+	background-color: rgb(88, 107, 168);
+	padding: 0.3em;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+}
+.aboutContent h2:before{
+	display: none;
 }
 .aboutContent {
 	padding: 1em;
@@ -131,7 +139,7 @@ Idem pour les partenaires de la pageContact */
 }
 
 .aboutContent .blocks-gallery-item img{
-	border-radius: 10px;
+	border-radius: 10px 10px 0 0;
 	border: 2px white solid;
 }
 .aboutContent .blocks-gallery-item figcaption{
