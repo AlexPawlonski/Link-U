@@ -4,11 +4,10 @@ Description: Thème enfant de twentynineteen
 Author: Cefii
 Template: twentynineteen
 */
-/*COUCOU*/
+
 h2 {
 	color: purple;
 }
-/* OUCOUC */
 /* SIDEBARS */
 .sidebar{
 	width: 15%;
@@ -36,7 +35,7 @@ h2 {
 
 
 /* *************************Front Page****************Vincent*********** */
-.avecSideBarGauche {
+.avecSideBar {
 	width: 70%;
 }
 .frontPageContent~h2 {

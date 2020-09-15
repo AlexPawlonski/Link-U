@@ -3,18 +3,16 @@ get_header();
 // Sidebar gauche
 get_sidebar('accueil');
 // Content
-	// Sidebar gauche
-	?><div class="frontPageContent avecSidebarGauche"><?php
 
-else{
-	// !Sidebar gauche
-	?><div class="frontPageContent"></div><?php
-}
+// Sidebar gauche
+?><div class="frontPageContent avecSidebar"><?php
+
+
 
 // Les dernières actualités
 if (have_posts()) : while (have_posts()) : the_post(); ?>
 <p><?php the_content(); ?></p>
-</div>
+</div><!-- fermeture frontPageContent -->
 <?php
 endwhile;
 endif;
