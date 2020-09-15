@@ -4,6 +4,7 @@ Description: Thème enfant de twentynineteen
 Author: Cefii
 Template: twentynineteen
 */
+/*------------------------GENERAL-------------------------------*/
 body{
 margin:auto;
 padding: 0;
@@ -12,3 +13,94 @@ padding: 0;
     max-width: 1200px;
     margin: 0 auto;
 }
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/*--------------------HEADER----------------------------------*/
+header{
+    display:flex ;
+}
+#rightHeader{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+/*logo*/
+#logosite img{
+    width: 150px;
+}
+/*recherche */
+#recherche{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+}
+#recherche img{
+    width: 30px;
+}
+#recherche form label span{
+    display: none;
+}
+#recherche form .search-submit{
+    display: none;
+}
+
+/*NAV------------------*/
+/*--------navbtn------------------------*/
+.ligne{
+    background-color: #3fefe5;
+    height: 7px;
+    width: 50px;
+    margin: 10px;
+}
+/*--------nav menu -------------------*/
+#menuPrincipal{
+    background-color: white;
+    text-align: center; 
+    display: none;
+    position: absolute;
+    width: 80%;
+    z-index: 1000;
+    top: 137px;
+}
+#menu-principal{
+    display: flex;
+}
+.menu-mainmenu-container{
+    width: 100%;
+}
+#menuPrincipal li{
+    margin: 50px auto;
+}
+#menuPrincipal .sub-menu{
+    display: none;
+    z-index: 2000;
+}
+#menuPrincipal li:hover .sub-menu{
+    display: block;
+}
+#menuPrincipal a{
+    padding: 10px 50px;
+}
+#menuPrincipal a:hover{
+    border: solid 1px rgba(128, 128, 128, 0.287);
+    box-shadow: 5px 2px 2px rgba(93, 93, 93, 0.637);
+    background-color:  #3fefe5;
+}
+/*LOGO ITEM---------------*/
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo i{
+    font-size: 45px;
+    color:  #3fefe5;
+}
+
