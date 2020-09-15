@@ -4,8 +4,9 @@ get_header();
 get_sidebar('accueil');
 // Content
 	// Sidebar gauche
+if(is_active_sidebar('accueil')){
 	?><div class="frontPageContent avecSidebarGauche"><?php
-
+}
 else{
 	// !Sidebar gauche
 	?><div class="frontPageContent"></div><?php
