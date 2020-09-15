@@ -4,13 +4,24 @@ Description: Thème enfant de twentynineteen
 Author: Cefii
 Template: twentynineteen
 */
-body{
-margin:none;
+
+
+
+.site-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
-/*COUCOU*/
-h2 {
-	color: purple;
+/* *************************SIDEBARS**********************Gabriel***** */
+.sidebar{
+	width: 15%;
+	border: 1px solid cyan;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
+<<<<<<< HEAD
 /* OUCOUC */
 
 /***** Main *****/
@@ -101,12 +112,133 @@ h2 {
 	border: 1px solid grey;
 }
 
+=======
+.sidebar-boutique{
+	border: none;
+	background-color: darkgray;
+}
+/*
+code pour widget téléphone->html personalisé
+<div class="contactTelWidget">
+	<i class="fas fa-phone-alt "></i>
+	<span>0606060606</span>
+</div> */
+.contactTelWidget{
+	color: rgb(53, 196, 196);
+	font-weight: bolder;
+	font-size: 2em;
+	display: flex;
+	align-items: center;
+}
+.contactTelWidget .fas{
+	width:25%
+}
+.sidebar li{
+	display:flex;
+	flex-direction:column;
+}
+.sidebar li a{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.sidebar .product-title{
+	width:100%
+}
 /* 
-input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="number"], select, textarea {
-	margin:0;
-	padding:1em;
-	background-color: rgba(202,242,242,1);
-	border:1px solid #eee;
-	color: #666;
-	width: 50%;
+Pour le widget de la page décoration utiliser le menu de navigation et appliquer les classes css via les liens personnalisés 
+(cases options a cochéspour faire apparaitre les champs et ajouter la classe menutestbcg
+Idem pour les partenaires de la pageContact */
+
+.menutestbcg a{
+	padding-top:10em;
+	text-align:center;
+}
+.menutestbcg{
+	background-image:url(images/Capture.png);
+	background-position: center  ;
+	background-size:50%;
+	background-repeat: no-repeat;
+}
+
+
+/* *************************Front Page****************Vincent*********** */
+.frontPageContent {
+	width: 70%;
+}
+.frontPageContent>h2 {
+	text-align: center;
+	background-color: rgb(88, 107, 168);
+	padding: 0.3em;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+}
+.frontPageContent>h2:before{
+	display: none;
+}
+.wc-block-grid__product-onsale{
+	position: absolute;
+	top: 15%;
+	left: 20%;
+	transform: rotate(-45deg);
+	transform-origin: center;
+}
+
+.wc-block-grid__product-image, .wc-block-grid__product-image img{
+	height: 150px;
+	width: auto;
+}
+.wc-block-grid__product-image img{
+	margin: 1em;
+	width: auto !important;
+}
+.wc-block-grid__product{
+	width: 15%;
+	height: 300px;
+}
+
+
+/* *************************Qui sommes nous*******************Vincent******** */
+.aboutContent h2 {
+
+}
+.aboutContent {
+	padding: 1em;
+}
+.aboutContent .blocks-gallery-grid {
+	justify-content: space-around;
+	width: 90vw;
+	margin-bottom: 2em;
+}
+/* .aboutContent .blocks-gallery-item {
+	flex-grow: 0;
+	width: 200px !important;
 } */
+.aboutContent .blocks-gallery-item {
+	flex-grow: 0;
+	width: 100%;
+	height: 300px;
+	margin: 1em 0;
+}
+
+.aboutContent .blocks-gallery-item img{
+	border-radius: 10px;
+	border: 2px white solid;
+}
+.aboutContent .blocks-gallery-item figcaption{
+	position: unset;
+	background: none;
+	color: black;
+	padding: 0 0.5em;
+	background-color: #fff;
+	border-radius: 0 0 10px 10px;
+}
+.aboutContent .blocks-gallery-item figure{
+	display: block;
+	box-shadow: 20px 30px 30px black;
+}
+
+
+
+>>>>>>> 337b4bf773167f55684517c770e62f1ccb615e7e
