@@ -32,3 +32,42 @@ h2 {
 .sidebar .product-title{
 	width:100%
 }
+
+
+
+/* *************************Front Page****************Vincent*********** */
+.avecSideBarGauche {
+	width: 70%;
+}
+.frontPageContent~h2 {
+	text-align: center;
+	background-color: rgb(88, 107, 168);
+	padding: 0.3em;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+}
+.frontPageContent~h2:before{
+	display: none;
+}
+.wc-block-grid__product-onsale{
+	position: absolute;
+	top: 15%;
+	left: 20%;
+	transform: rotate(-45deg);
+	transform-origin: center;
+}
+
+.wc-block-grid__product-image, .wc-block-grid__product-image img{
+	height: 150px;
+	width: auto;
+}
+.wc-block-grid__product-image img{
+	margin: 1em;
+	width: auto !important;
+}
+.wc-block-grid__product{
+	width: 15%;
+	height: 300px;
+}
+

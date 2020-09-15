@@ -4,16 +4,15 @@ get_header();
 get_sidebar('accueil');
 // Content
 	// Sidebar gauche
-		// Et droite
-		// Sans droite
-	// Sans gauche
-		// Et droite
-		// Sans droite
+	?><div class="frontPageContent avecSidebarGauche"><?php
+
+else{
+	// !Sidebar gauche
+	?><div class="frontPageContent"></div><?php
+}
 
 // Les dernières actualités
 if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="homeWidget">
-<h3><?php the_title(); ?></h3>
 <p><?php the_content(); ?></p>
 </div>
 <?php

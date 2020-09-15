@@ -1,4 +1,12 @@
 <?php
+
+
+function link_u_enqueue_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+
 function link_u_register_sidebars(){
     if(function_exists('register_sidebar')){
         register_sidebar(array(
