@@ -9,19 +9,13 @@
 <?php wp_body_open();?>
     <div id="wrapper">
         <header>
-            <div id="logosite">
-                <?php $image = get_header_image();
-                 if(!empty($image)):?>
-                    <img src="<?php echo esc_url($image);?>" alt="Logo <?php bloginfo('name');?>"width="<?php echo get_custom_header()->width;?>" height="<?php echo get_custom_header()->height;?>">
-                <?php else: ?>
-                <img src="<?php echo get_theme_support('custom-header', 'default-image');?>" 
-                    alt="Logo <?php bloginfo('name');?>">
-                <?php endif; ?>
-            </div>
+            <a  href="<?php bloginfo('url');?>" title="<?php bloginfo('name');?>">
+                <img id ='logo-site' src="<?php echo wp_get_attachment_url(get_theme_mod('logo-header'));?>" alt="Logo <?php bloginfo('name');?>">
+            </a>
             <section id="rightHeader">
                 <div id="recherche">
                     <?php for($i=1; $i<=2; $i++):?>
-                    <img src="<?php echo get_theme_mod('language-logo-'.$i);?>" alt="">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('language-logo-'.$i));?>" alt="">
                     <?php endfor;?>
                     <?php get_search_form()?>
                 </div>
@@ -44,6 +38,9 @@
                 </div>
             </section>
         </header>  
+       
+        
+        <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">
         <?php
         if(is_home() || is_front_page()):
             ?><div class="bxslider"><?php
@@ -58,5 +55,3 @@
             <?php 
         endif;
         ?>
-        
-        <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">

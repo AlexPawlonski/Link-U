@@ -26,9 +26,10 @@ if( isset( $wp_customize->selective_refresh ) ) {
 }
 
 /*-----------------SECTION ------------------------*/
-$wp_customize-> add_section('my_footer', array(
-	'title' => 'Footer',
-	'priority' => 120
+
+$wp_customize-> add_section('Logo', array(
+	'title' => 'Logo header',
+	'priority' => 10
 ));
 $wp_customize-> add_section('language', array(
 	'title' => 'Logo Langue',
@@ -38,13 +39,27 @@ $wp_customize-> add_section('carousel', array(
 	'title' => 'Carousel page d\'accueil',
 	'priority' => 80
 ));
-$wp_customize-> add_section('contact', array(
-	'title' => 'Page Contact',
-	'priority' => 100
+$wp_customize-> add_section('footer', array(
+	'title' => 'Footer',
+	'priority' => 120
 ));
 
+//logo header
+$wp_customize->add_setting('logo-header', array(
+	'transport' => 'refresh'
+));	
+$wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'logo-header', array(
+	'section' => 'Logo',
+	'label' => __( 'Image logo' , 'text-domain' ),
+	'settings' => 'logo-header',
+	'flex_width' => false,
+	'flex_height' => false,
+	'width' => 1200,
+	'height' => 500,
+)));
 
-//Gestion des logo
+
+//Gestion des logo langue 
 for ($i=1; $i<= 2; $i++){
 	$wp_customize->add_setting('language-logo-'.$i, array(
 		'transport' => 'refresh'
@@ -61,7 +76,6 @@ for ($i=1; $i<= 2; $i++){
 };
 
 
-/*::::::::::::::page accueil:::::::::::::::*/
 /*--------------------carousel-------------*/
 $wp_customize-> add_section('carousel', array(
 	'title' => 'Carousel page d\'accueil',
@@ -83,7 +97,18 @@ $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customiz
 )));
 };
 
+}
 
 
-
+//update fil d’Ariane de WooCommerce 
+add_filter( 'woocommerce_breadcrumb_defaults', 'wpm_woocommerce_breadcrumbs' );
+function wpm_woocommerce_breadcrumbs() {
+    return array(
+            'delimiter'   => ' > ',
+            'wrap_before' => '<nav class="woocomerce-fil" itemprop="breadcrumb">', // Modifie la balise HTML ouvrant le fil d'ariane
+            'wrap_after'  => '</nav>', // Modifie la balise HTML fermant le fil d'ariane
+            'before'      => '', // Ajoute une chaine de caractère avant chaque item du fil d'ariane
+            'after'       => '', // Ajoute une chaine de caractère après chaque item du fil d'ariane
+            'home'        => _x( 'Accueil', 'breadcrumb', 'woocommerce' ), // Modifiez ici le texte "Accueil"
+        );
 }
