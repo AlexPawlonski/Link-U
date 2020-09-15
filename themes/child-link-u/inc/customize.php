@@ -97,6 +97,54 @@ $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customiz
 )));
 };
 
+/*Footet--------------------*/
+
+$wp_customize -> add_setting('twitter', array( 
+	'default' => '',   
+));
+$wp_customize->add_control('twitter', array(
+	'label' => __('Twitter :'),
+	'section' => 'footer',
+	'type' => 'url',
+	'input_attrs' => array(
+		'placeholder' => 'https://',
+	)
+));
+$wp_customize -> add_setting('facebook', array( 
+	'default' => '',
+));
+$wp_customize->add_control('facebook', array(
+	'label' => __('Facebook :'),
+	'section' => 'footer',
+	'type' => 'url',
+	'input_attrs' => array(
+		'placeholder' => 'https://',
+	)
+));
+
+$wp_customize -> add_setting('linkedin', array( 
+	'default' => '',
+));
+$wp_customize->add_control('linkedin', array(
+	'label' => __('Linkedin :'),
+	'section' => 'footer',
+	'type' => 'url',
+	'input_attrs' => array(
+		'placeholder' => 'https://',
+	)
+));
+$wp_customize -> add_setting('instagram', array( 
+	'default' => '',
+));
+$wp_customize->add_control('instagram', array(
+	'label' => __('Instagram :'),
+	'section' => 'footer',
+	'type' => 'url',
+	'input_attrs' => array(
+		'placeholder' => 'https://',
+	)
+));
+
 }
 
 
@@ -112,3 +160,4 @@ function wpm_woocommerce_breadcrumbs() {
             'home'        => _x( 'Accueil', 'breadcrumb', 'woocommerce' ), // Modifiez ici le texte "Accueil"
         );
 }
+

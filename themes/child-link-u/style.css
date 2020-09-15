@@ -8,6 +8,7 @@ Template: twentynineteen
 body{
 margin:auto;
 padding: 0;
+font-family: Arial, sans-serif;
 }
 #wrapper{
     max-width: 1200px;
@@ -16,6 +17,7 @@ padding: 0;
 ul{
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -126,6 +128,25 @@ header{
     position: relative;
     max-lines: 1200;
 }
+
+/*FOOTER----------------------*/
+footer{
+    background-color: #3fefe5;
+    padding:0;
+    margin:0;
+    display: flex; 
+    align-items: center;
+}
+footer a{
+    color: white;
+}
+footer #menuFooter{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
 /*Merci d'utiliser un seul media screen */
 @media screen and (min-width:1200px){
 

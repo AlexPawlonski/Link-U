@@ -38,7 +38,6 @@
                 </div>
             </section>
         </header>  
-       
         
         <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">
         <?php
