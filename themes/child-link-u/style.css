@@ -19,6 +19,7 @@ ul{
 }
 a{
     text-decoration: none;
+    color: rgb(39, 43, 97);
 }
 /*--------------------HEADER----------------------------------*/
 header{
@@ -28,7 +29,7 @@ header{
     border-bottom: solid 2px rgb(39, 43, 97);
 }
 #logo-site{
-    width: 40%;
+    width: 250px;
 }
 #rightHeader{
     display: flex;
@@ -81,9 +82,7 @@ header{
 .menu-mainmenu-container{
     width: 100%;
 }
-#menuPrincipal li{
-    margin: 50px auto;
-}
+
 #menuPrincipal .sub-menu{
     display: none;
     z-index: 2000;
@@ -92,11 +91,13 @@ header{
     display: block;
 }
 #menuPrincipal a{
-    padding: 10px 50px;
+    padding: 5px 30px;
 }
+#menuPrincipal li{
+    margin: 20px 2px;
+}
+
 #menuPrincipal a:hover{
-    border: solid 1px rgba(128, 128, 128, 0.287);
-    box-shadow: 5px 2px 2px rgba(93, 93, 93, 0.637);
     background-color:  #3fefe5;
 }
 /*LOGO ITEM---------------*/
@@ -116,6 +117,7 @@ header{
     margin: 0;
     border: 0;
     box-shadow: none;
+    z-index:100
 }
 
 /*Fil d'ariane woocomerce----*/
@@ -124,4 +126,29 @@ header{
     position: relative;
     max-lines: 1200;
 }
+/*Merci d'utiliser un seul media screen */
+@media screen and (min-width:1200px){
 
+/*--------NAV pc--------------------*/
+#menuB{
+    display: none;
+}
+#menuPrincipal{
+    display: block;
+    position: initial;
+    white: 100%;
+}
+#menuPrincipal ul{
+    display: flex;
+}
+#menuPrincipal a{
+    padding: 5px 30px;
+}
+#menuPrincipal li {
+   border-right: 1px solid rgb(39, 43, 97);
+}
+#menuPrincipal li:last-child{
+   border: none ;
+
+}
+}
