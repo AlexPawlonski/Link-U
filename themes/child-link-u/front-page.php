@@ -1,5 +1,5 @@
 <?php
-// get_header();
+get_header();
 // Sidebar gauche
 get_sidebar('accueil');
 // Content
@@ -22,4 +22,4 @@ endif;
 
 // Les promotions
 // Sidebar droite
-// get_footer();
+get_footer();

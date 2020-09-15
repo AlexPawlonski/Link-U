@@ -13,9 +13,22 @@ h2 {
 .sidebar{
 	width: 15%;
 	border: 1px solid cyan;
-	display:flex;
-	flex-direction:column;	
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
-.sidebar-decoration{
-	border:none;
+.sidebar-boutique{
+	border: none;
+}
+.sidebar li{
+	display:flex;
+	flex-direction:column;
+}
+.sidebar li a{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.sidebar .product-title{
+	width:100%
 }
