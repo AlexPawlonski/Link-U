@@ -6,7 +6,6 @@ Template: twentynineteen
 */
 
 
-
 .site-content {
 	display: flex;
 	justify-content: space-around;
@@ -31,6 +30,7 @@ code pour widget téléphone->html personalisé
 	<i class="fas fa-phone-alt "></i>
 	<span>0606060606</span>
 </div> */
+
 .contactTelWidget{
 	color: rgb(53, 196, 196);
 	font-weight: bolder;
@@ -127,10 +127,7 @@ Idem pour les partenaires de la pageContact */
 	width: 90vw;
 	margin-bottom: 2em;
 }
-/* .aboutContent .blocks-gallery-item {
-	flex-grow: 0;
-	width: 200px !important;
-} */
+
 .aboutContent .blocks-gallery-item {
 	flex-grow: 0;
 	width: 100%;
@@ -156,4 +153,53 @@ Idem pour les partenaires de la pageContact */
 }
 
 
+/* *************************Inspiration*********************Vincent****** */
+.pageHome{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.pageHome h2{
+	text-align: center;
+	background-color: rgb(88, 107, 168);
+	padding: 0.3em;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+}
 
+.pageHome h2:before{
+	display: none;
+}
+
+.pageHome .homeArticle{
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.homeArticle a{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: black;
+	padding: 1em;
+	background-color: rgba(88, 168, 157, 0.096);
+	margin: 1em auto;
+	transition: 0.3s ease-in-out;
+}
+.homeArticle a:hover{
+	background-color: rgb(88, 107, 168);
+	color: white;
+}
+
+.homeArticle h2{
+	width: 100%;
+}
+
+.homeArticle img{
+	width: 150px;
+	height: 150px;
+	border: 2px rgb(88, 107, 168) solid;
+	border-radius: 10px;
+}
