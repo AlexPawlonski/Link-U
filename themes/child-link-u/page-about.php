@@ -10,7 +10,6 @@ get_header();
 
 // Les dernières actualités
 if (have_posts()) : while (have_posts()) : the_post(); ?>
-<h1>About</h1>
 <p><?php the_content(); ?></p>
 </div><!-- fermeture frontPageContent -->
 <?php
