@@ -45,8 +45,17 @@ add_action('wp_enqueue_scripts', 'link_u_scripts');
 function link_u_register_sidebars(){
     if(function_exists('register_sidebar')){
         register_sidebar(array(
-            'id'=>'sidebar-droite',
-            'name'=>'Barre latérale droite',
+            'id'=>'sidebar-accueil',
+            'name'=>'Barre latérale de la page Accueil',
+            'description' => 'Colonne de widget qui apparait à gauche',
+            'before_widget'=>'',
+            'after_widget'=>'',
+            'before_title' =>'<h3>',
+            'after_title' =>'</h3>'
+        ));
+        register_sidebar(array(
+            'id'=>'sidebar-boutique',
+            'name'=>'Barre latérale de la page Boutique',
             'description' => 'Colonne de widget qui apparait à droite',
             'before_widget'=>'',
             'after_widget'=>'',
@@ -54,9 +63,27 @@ function link_u_register_sidebars(){
             'after_title' =>'</h3>'
         ));
         register_sidebar(array(
-            'id'=>'sidebar-gauche',
-            'name'=>'Barre latérale gauche',
-            'description' => 'Emplacement de widget à gauche du contenu',
+            'id'=>'sidebar-contactdroite',
+            'name'=>'Barre latérale droite de la page Contact',
+            'description' => 'Colonne de widget qui apparait à droite',
+            'before_widget'=>'',
+            'after_widget'=>'',
+            'before_title' =>'<h3>',
+            'after_title' =>'</h3>'
+        ));
+        register_sidebar(array(
+            'id'=>'sidebar-contactgauche',
+            'name'=>'Barre latérale gauche de la page Contact',
+            'description' => 'Colonne de widget qui apparait à gauche',
+            'before_widget'=>'',
+            'after_widget'=>'',
+            'before_title' =>'<h3>',
+            'after_title' =>'</h3>'
+        ));
+        register_sidebar(array(
+            'id'=>'sidebar-decoration',
+            'name'=>'Barre latérale de la page Decoration',
+            'description' => 'Colonne de widget qui apparait à droite',
             'before_widget'=>'',
             'after_widget'=>'',
             'before_title' =>'<h3>',
