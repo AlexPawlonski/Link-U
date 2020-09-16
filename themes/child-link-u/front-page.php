@@ -1,11 +1,17 @@
 <?php
 get_header();
-// Sidebar gauche
+
+// Sidebar gauche?>
+<div id="langfrFR"><img src="./images/logoFran.png" alt=""></div>
+<div id="langenEN"><img src="images/logoEngl.png" alt=""></div>
+<div><?php _e('This is a test','twentynineteenchild');?></div>
+<?php
 get_sidebar();
 // Content
 
 // Sidebar gauche
-?><div class="frontPageContent avecSidebar"><?php
+?>
+<div class="frontPageContent avecSidebar"><?php
 
 
 

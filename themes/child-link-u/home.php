@@ -1,7 +1,8 @@
 <?php
 get_header();
 
-?><div class="pageHome"><?php
+?>
+<div class="pageHome"><?php
 
 if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="homeArticle">
