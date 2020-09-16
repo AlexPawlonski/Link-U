@@ -4,110 +4,214 @@ Description: Thème enfant de twentynineteen
 Author: Cefii
 Template: twentynineteen
 */
-
-
-
-.site-content {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	flex-wrap: wrap;
+/*------------------------GENERAL-------------------------------*/
+body{
+margin:auto;
+padding: 0;
+font-family: Arial, sans-serif;
 }
-/* *************************SIDEBARS**********************Gabriel***** */
-.sidebar{
-	width: 15%;
-	border: 1px solid cyan;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+#wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 }
-/* OUCOUC */
-
-/***** Main *****/
-#main {
-	width: 1080px;
-	margin: 0 auto;
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-
-/***** Formulaire de contact *****/
-#wpcf7-f61-p14-o1 {
-	padding: 1em;
-    background-color:rgba(234,234,234,1);
+a{
+    text-decoration: none;
+    color: rgb(39, 43, 97);
 }
-
-#wpcf7-f61-p14-o1 p {
-	display:flex;
-	margin:0;
-	padding:0;
-	width: 50%!important;
-	flex-direction:row;
-	flex-wrap:nowrap!important;
+/*--------------------HEADER----------------------------------*/
+header{
+    display:flex ;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 2px rgb(39, 43, 97);
 }
-
-/* Puce du formulaire */ 
-#wpcf7-f61-p14-o1 p::before {
-	background: transparent url('puce-form-contact.png') no-repeat 0 0 scroll;
-	background-size:100% 100%;
-	width: 3em;
-	height: 1em;
+#logo-site{
+    width: 250px;
 }
-
-.contact-form-slogan, .field-compulsory {
-	margin:0.6em 0;
-	padding: 0;
-	text-align:center;
-	font-size: 1em;
+#rightHeader{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: right;
 }
-
-
-#wpcf7-f61-p14-o1 label {
-	display:flex;
-	flex-wrap: nowrap;
+/*logo*/
+#logosite img{
+    width: 150px;
+}
+/*recherche */
+#recherche{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+}
+#recherche img{
+    width: 30px;
+    margin: 5px;
+}
+#recherche form label span{
+    display: none;
+}
+#recherche form .search-submit{
+    display: none;
 }
 
-#wpcf7-f61-p14-o1 span.wpcf7-form-control-wrap {
-	margin-left:1em;
+/*NAV------------------*/
+/*--------navbtn------------------------*/
+.ligne{
+    background-color: #3fefe5;
+    height: 7px;
+    width: 50px;
+    margin: 10px;
+}
+/*--------nav menu -------------------*/
+#menuPrincipal{
+    background-color: white;
+    text-align: center; 
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 173px;
+}
+#menu-principal{
+    display: flex;
+}
+.menu-mainmenu-container{
+    width: 100%;
 }
 
-#wpcf7-f61-p14-o1 input {
-	width:100%;
+#menuPrincipal .sub-menu{
+    display: none;
+    z-index: 2000;
+}
+#menuPrincipal li:hover .sub-menu{
+    display: block;
+}
+#menuPrincipal a{
+    padding: 5px 30px;
+}
+#menuPrincipal li{
+    margin: 20px 2px;
 }
 
-#wpcf7-f61-p14-o1 select {
-	width:100%;
+#menuPrincipal a:hover{
+    background-color:  #3fefe5;
+}
+/*LOGO ITEM---------------*/
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo i{
+    font-size: 45px;
+    color:  #3fefe5;
+    margin: 2px;
 }
 
-#wpcf7-f61-p14-o1 textarea {
-	width:100%;
+/*BXslider----------------*/
+.bx-wrapper{
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    z-index:100
+}
+.bx-pager{
+    display: none;
 }
 
-.wpcf7-form-control, .wpcf7-text, .wpcf7-validates-as-required {
-	margin:0;
-	padding:1em;
-	background-color: rgba(202,242,242,1);
-	border:1px solid #eee;
-	color: #666;
-	width: 50%;
+/*Fil d'ariane woocomerce----*/
+
+.woocomerce-fil{
+    position: relative;
+    max-lines: 1200;
 }
 
-.wpcf7-captcha {}
-
-.wpcf7-submit {
-	background-color:#fff;
-	border: 1px solid black;
-	cursor:pointer;
-	font-size: 1.1em;
-	font-weight:bolder;
-	margin:0;
-	padding:1em;
-	display:flex;
-	justify-content:flex-end;
-	height:auto!important;
-	width:auto!important;
+/*FOOTER----------------------*/
+footer{
+    background-color: #3fefe5;
+    padding:10px;
+    margin:0;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgb(52, 77, 140);
+}
+footer #menuFooter{
+    text-align: center;
+    margin: 5px;
 }
 
-.wpcf7-submit:active, .wpcf7-submit:hover {
-	background-color:#eee;
-	border: 1px solid grey;
+#reseaux{
+   width: 60%;
+   text-align: center;
+}
+#reseaux div{
+   display: flex;
+   justify-content: space-around;
+}
+#reseaux i{
+   font-size: 40px;
 }
 
+
+
+
+
+
+/*Merci d'utiliser un seul media screen */
+@media screen and (min-width:1200px){
+
+/*--------NAV pc--------------------*/
+#menuB{
+    display: none;
+}
+#menuPrincipal{
+    display: block;
+    position: initial;
+}
+#menuPrincipal ul{
+    display: flex;
+}
+#menuPrincipal a{
+    padding: 5px 30px;
+}
+#menuPrincipal li {
+   border-right: 1px solid #3fefe5;
+}
+#menuPrincipal li:last-child{
+   border: none ;
+
+}
+
+/*footer -------------------------*/
+footer{
+    flex-direction: initial;
+}
+
+#reseaux{
+    width: 30%;
+}
+footer #menuFooter{
+    width: 70%;
+    text-align: center;
+    margin: 5px;
+}
+footer #menuFooter ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+}
