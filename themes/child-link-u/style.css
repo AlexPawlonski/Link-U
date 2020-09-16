@@ -12,13 +12,20 @@ Template: twentynineteen
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
-/* *************************SIDEBARS**********************Gabriel***** */
+/* OUCOUC */
+/* *******************SIDEBARS********************/
 .sidebar{
 	width: 15%;
 	border: 1px solid cyan;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	margin:1em;
+}
+.sidebar h3{
+	font-size:1em;
+	width:80%;
+	margin:auto;
 }
 /* OUCOUC */
 
@@ -124,24 +131,33 @@ code pour widget téléphone->html personalisé
 .contactTelWidget{
 	color: rgb(53, 196, 196);
 	font-weight: bolder;
-	font-size: 2em;
+	font-size: 1.5em;
 	display: flex;
 	align-items: center;
+	width: 80%;
+	margin:auto;
 }
 .contactTelWidget .fas{
-	width:25%
+	width:10%;
+}
+.contactTelWidget span{
+	width:80%;
 }
 .sidebar li{
 	display:flex;
 	flex-direction:column;
+	margin-bottom:1em;
 }
 .sidebar li a{
 	display:flex;
-	flex-wrap:wrap;
+	flex-direction:column-reverse;
 	justify-content:center;
 }
+.sidebar li a img{
+	margin: auto;
+}
 .sidebar .product-title{
-	width:100%
+	text-align:start;
 }
 /* 
 Pour le widget de la page décoration utiliser le menu de navigation et appliquer les classes css via les liens personnalisés 
@@ -158,7 +174,14 @@ Idem pour les partenaires de la pageContact */
 	background-size:50%;
 	background-repeat: no-repeat;
 }
-
+.sidebar .woocommerce-Price-amount,.woocommerce-price-suffix{
+	display:none;
+}
+.produc-excerpt{
+	width:80%;
+	margin:auto;
+	text-justify:justify;
+}
 
 /* *************************Front Page****************Vincent*********** */
 .frontPageContent {
