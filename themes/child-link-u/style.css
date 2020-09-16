@@ -40,55 +40,6 @@ header{
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
-/* OUCOUC */
-/* *******************SIDEBARS********************/
-.sidebar{
-	width: 15%;
-	border: 1px solid cyan;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin:1em;
-}
-.sidebar h3{
-	font-size:1em;
-	width:80%;
-	margin:auto;
-}
-/* OUCOUC */
-
-/***** Main *****/
-#main {
-	width: 1080px;
-	margin: 0 auto;
-}
-#rightHeader{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: right;
-}
-/*logo*/
-#logosite img{
-    width: 150px;
-}
-/*recherche */
-#recherche{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: right;
-}
-#recherche img{
-    width: 30px;
-    margin: 5px;
-}
-#recherche form label span{
-    display: none;
-}
-#recherche form .search-submit{
-    display: none;
-}
 
 /*NAV------------------*/
 /*--------navbtn------------------------*/
@@ -211,6 +162,66 @@ code pour widget téléphone->html personalisé
 	margin:auto;
 	text-justify:justify;
 }
+
+/* *******************SIDEBARS********************/
+.sidebar{
+	width: 15%;
+	border: 1px solid cyan;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin:1em;
+}
+.sidebar h3{
+	font-size:1em;
+	width:80%;
+	margin:auto;
+}
+
+/***** Main *****/
+#main {
+	width: 1080px;
+	margin: 0 auto;
+}
+#rightHeader{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+/*logo*/
+#logosite img{
+    width: 150px;
+}
+/*recherche */
+#recherche{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+}
+#recherche img{
+    width: 30px;
+    margin: 5px;
+}
+#recherche form label span{
+    display: none;
+}
+#recherche form .search-submit{
+    display: none;
+}
+/*MODIF WOOCOMERCE-------------*/
+#main{
+    margin: 5px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+}
+.woocommerce .content-area{
+    margin: 2px !important;
+}
+
+
 
 /*FOOTER----------------------*/
 footer{
