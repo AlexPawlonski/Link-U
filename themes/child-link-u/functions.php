@@ -64,4 +64,3 @@ function link_u_register_sidebars(){
         echo '<div class="produc-excerpt">'. $product->get_description(). '</div>';
         }
         add_filter('woocommerce_widget_product_item_end', 'add_excerpt_to_widget_products', 10, 1 );
-

@@ -158,6 +158,9 @@ code pour widget téléphone->html personalisé
 .sidebar .product-title{
 	text-align:start;
 }
+.produc-excerpt{
+	font-size: 15px;
+}
 /* 
 Pour le widget de la page décoration utiliser le menu de navigation et appliquer les classes css via les liens personnalisés 
 (cases options a cochéspour faire apparaitre les champs et ajouter la classe menutestbcg
