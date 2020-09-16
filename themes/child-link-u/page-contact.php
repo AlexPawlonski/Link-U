@@ -4,19 +4,20 @@ Template Name: Page Contact
 */
 get_header();
 ?>
-
 <div class="contactPage">
 	<?php
+	get_sidebar('contactgauche');
 	if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<p><?php the_content(); ?></p>
-	<?php 
-	the_widget( 'Kontakt_Widget' );
-	 ?>
-
-<?php
-endwhile;
-endif; 
-?>
+			<?php
+			the_widget('Kontakt_Widget');
+			?>
+			<p><?php the_content(); ?></p>
+	<?php endwhile;
+	endif; ?>
+	<?php
+	get_sidebar('contactdroit');
+	?>
 </div><!-- fermeture contactPage -->
 <?php
+
 get_footer();
