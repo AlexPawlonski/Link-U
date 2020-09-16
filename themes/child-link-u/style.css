@@ -41,6 +41,8 @@ header{
 	flex-wrap: wrap;
 }
 
+
+
 /*NAV------------------*/
 /*--------navbtn------------------------*/
 .ligne{
@@ -162,7 +164,16 @@ code pour widget téléphone->html personalisé
 	margin:auto;
 	text-justify:justify;
 }
-
+/*MAIN WOOCOMMERCE----------------------------*/
+.woocommerce .content-area .site-main{
+    max-width: 1200px !important;
+}
+.content-area{
+    margin: 5px !important;
+}
+#main{
+    width: 100% !important;
+}
 /* *******************SIDEBARS********************/
 .sidebar{
 	width: 15%;
@@ -210,18 +221,6 @@ code pour widget téléphone->html personalisé
 #recherche form .search-submit{
     display: none;
 }
-/*MODIF WOOCOMERCE-------------*/
-#main{
-    margin: 5px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-
-}
-.woocommerce .content-area{
-    margin: 2px !important;
-}
-
-
 
 /*FOOTER----------------------*/
 footer{
