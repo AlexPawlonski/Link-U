@@ -121,6 +121,9 @@ header{
     box-shadow: none;
     z-index:100
 }
+.bx-pager{
+    display: none;
+}
 
 /*Fil d'ariane woocomerce----*/
 
@@ -141,6 +144,9 @@ footer{
 }
 footer a{
     color: white;
+}
+footer a:hover{
+    color: rgb(52, 77, 140);
 }
 footer #menuFooter{
     text-align: center;

@@ -42,25 +42,26 @@
         <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">
         <?php
         if(is_home() || is_front_page()):
-            ?><div class="bxslider"><?php
+            ?><ul class="bxslider">
+                <?php
             for ($i=1; $i < 8; $i++) { 
                 $img = get_theme_mod( 'carousel-image-'.$i);
 
                 if(!empty($img)){
-                    if(!empty($img)):?><div><img src="<?php echo wp_get_attachment_url($img);?>" title=""></div><?php endif;
+                    if(!empty($img)):?><li><img src="<?php echo wp_get_attachment_url($img);?>" title=""></li><?php endif;
                 }
             }
-             ?>
-                <script>
+             ?> </ul>
+           
+            <script>
                     jQuery(document).ready(function($){ 
                         $('.bxslider').bxSlider({
                             mode: 'fade',
                             captions: true,
-                            slideWidth: 1200   
+                            slideWidth: 1200, 
                         }); 
                     });
-                </script>
-            </div>
+            </script>
             <?php 
         endif;
         ?>
