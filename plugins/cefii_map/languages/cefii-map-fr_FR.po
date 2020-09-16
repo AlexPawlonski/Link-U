@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cefii_Map\n"
+"POT-Creation-Date: 2020-09-09 13:36+0200\n"
+"PO-Revision-Date: 2020-09-09 13:37+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Cefii_Map.php:10 Cefii_Map_Widget.php:8
+msgid "Add customized maps to your content"
+msgstr "Ajouter des GoogleMaps personnalisées à votre contenu"
+
+#: Cefii_Map_Plugin.php:44
+msgid "The map has been successfully created !"
+msgstr "La carte a été créée avec succès !"
+
+#: Cefii_Map_Plugin.php:47
+msgid "The map has been successfully updated !"
+msgstr "La carte a été mise à jour avec succès !"
+
+#: Cefii_Map_Plugin.php:50
+msgid "The map has been deleted."
+msgstr "La carte a été supprimée."
+
+#: Cefii_Map_Plugin.php:104
+msgid "Do you want to delete this map?"
+msgstr "Voulez-vous supprimer cette carte ?"
+
+#: Cefii_Map_Plugin.php:105
+msgid "Copied to clipboard "
+msgstr "Copié dans le presse-papier "
+
+#: Cefii_Map_Plugin.php:172
+msgid "Your API key"
+msgstr "Votre clé API"
+
+#: Cefii_Map_Widget.php:24 template-admin.php:32 template-map.php:31
+msgid "Title"
+msgstr "Titre"
+
+#: Cefii_Map_Widget.php:28
+msgid "Select the map"
+msgstr "Sélectionner la carte"
+
+#: Cefii_Map_Widget.php:49
+msgid "Or you can create a new one "
+msgstr "Ou vous pouvez en créer une nouvelle "
+
+#: Cefii_Map_Widget.php:49
+msgid "here"
+msgstr "ici"
+
+#: Cefii_Map_Widget.php:52
+msgid "Do you want to display the map title ?"
+msgstr "Voulez-vous afficher le titre de la carte ?"
+
+#: Cefii_Map_Widget.php:56
+msgid "Yes"
+msgstr "Oui"
+
+#: template-admin.php:5
+msgid "Important"
+msgstr "Important"
+
+#: template-admin.php:6
+msgid "An API key is required for displaying GoogleMaps "
+msgstr "Une clé API est requise pour l’affichage de GoogleMaps "
+
+#: template-admin.php:6
+msgid "Get a new API key"
+msgstr "Obtenir une nouvelle clé d’API"
+
+#: template-admin.php:7
+msgid "After creating the API key, paste it right below : "
+msgstr "Après avoir créé votre clé API, collez là ci-dessous : "
+
+#: template-admin.php:12
+msgid "Save the key"
+msgstr "Enregistrer la clé"
+
+#: template-admin.php:19 template-map.php:5
+msgid "New Map"
+msgstr "Nouvelle Carte"
+
+#: template-admin.php:38 template-map.php:37
+msgid "Please enter a title"
+msgstr "Veuillez renseigner un titre"
+
+#: template-admin.php:42 template-map.php:41
+msgid "Latitude"
+msgstr "Latitude"
+
+#: template-admin.php:48 template-map.php:47
+msgid "Please enter a latitude"
+msgstr "Veuillez renseigner une latitude"
+
+#: template-admin.php:52 template-map.php:51
+msgid "Longitude"
+msgstr "Longitude"
+
+#: template-admin.php:59 template-map.php:58
+msgid "Please enter a longitude"
+msgstr "Veuillez renseigner une longitude"
+
+#: template-admin.php:63
+msgid "Create"
+msgstr "Créer"
+
+#: template-admin.php:65 template-map.php:64
+msgid "Required fields"
+msgstr "Champs obligatoires"
+
+#: template-map.php:22
+msgid ""
+"Copy (ctrl+c) this code and paste it (ctrl+v) inside the page / article "
+"where you want it to appear"
+msgstr ""
+"Copiez (ctrl+c) ce code et collez le (ctrl+v) dans la page / l'article ou "
+"vous souhaitez que la carte apparaisse"
+
+#: template-map.php:62
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+
+#~ msgid "Copied"
+#~ msgstr "Copié"

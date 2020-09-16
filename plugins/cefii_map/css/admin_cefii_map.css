@@ -1,0 +1,161 @@
+.wrapCefiiMap h2{
+	text-align: center;
+ 	font-size: 2em;
+ 	background-color: rgb(188, 188, 235);
+	padding: 1em;
+	color: white;
+	margin-top: 0;
+}
+.wrapCefiiMap {
+	margin-right: 1.5em;
+}
+.cadreMap{
+	border: 3px rgb(188, 188, 235) solid;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+#formMap {
+	padding: 1em;
+	border-radius: 20px;
+} 
+
+.errorCefiiText{
+	color: red;
+	display: none;
+	background-color: rgb(252, 200, 200);
+	border-radius: 20px;
+	padding: 0.5em;
+	margin-top: 0 ;
+}
+
+.errorCefiiMap{
+	display: inline-block;
+}
+
+#bt-map{
+	color: white;
+	border: rgb(129, 129, 199);
+	background-color: rgb(129, 129, 199);
+	transition: 0.3s ease-in-out;
+}
+
+#bt-map:hover{
+	border: rgb(150, 150, 224);
+	background-color: rgb(188, 188, 235);
+}
+
+.success {
+	color: white;
+	background-color: rgba(188, 188, 235, 0.555);
+	display: inline-block;
+	padding: 0.5em;
+	border-radius: 0 0 20px 20px;
+	margin-top: 0;
+	margin-left: 20px;
+}
+
+.error {
+	color: white;
+	background-color: rgb(252, 200, 200);
+	display: inline-block;
+	padding: 0.5em;
+	border-radius:20px;
+}
+
+.choixMap ul{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin: 0;
+	margin-left: 20px;
+}
+#newMap{
+	background-color: rgb(188, 188, 235);
+}
+#active{
+	background-color: rgb(209, 194, 219);
+}
+
+.choixMap li{
+	border-radius: 20px 20px 0 0;
+	background-color: rgb(148, 148, 235);
+	margin: 0;
+	border-bottom: none;
+	position: relative;
+}
+
+.choixMap a{
+	padding: 1.5em;
+	text-decoration: none;
+	color: rgb(77, 77, 168);
+	font-size: 1.2em;
+	display: block;
+}
+
+.mapTitle {
+	text-align: center;
+	margin: 0;
+	font-size: 2em;
+	width: 100%;
+	background-color: rgb(233, 223, 223);
+	padding: 1em;
+}
+
+.button-alert{
+	background-color: rgb(206, 54, 54);
+	border: none;
+	color: white;
+	border-radius: 0 20px 0 10px;
+	padding: 0.5em 1em;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.8em;
+}
+
+.button-alert:hover{
+	background-color: rgb(156, 42, 42);
+}
+p.submit {
+	margin: 0;
+}
+
+#map {
+	height: 500px;
+	width: 500px;
+}
+.mapPreview{
+	margin: 2em;
+}
+
+#apiKey{
+	border: 2px rgb(255, 0, 106) solid;
+	margin: 1em 0;
+	padding: 1em;
+}
+
+.warning {
+	color: rgb(255, 0, 106);
+}
+
+#apiKey .button-primary{
+	background-color: rgb(236, 44, 124) ;
+	border: rgb(255, 0, 106);
+	transition: 0.3s ease-in-out;
+}
+
+#apiKey .button-primary:hover{
+	background-color: rgb(185, 39, 100) ;
+	border: rgb(255, 0, 106);
+}
+
+.mapInfos{
+	width: 40%;
+}
+#shortCodeInput{
+	text-align: center;
+}
