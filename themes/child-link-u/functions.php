@@ -1,11 +1,45 @@
 <?php
+// CUSTOMIZE
+require_once 'inc/customize.php';
+add_action('customize_register', 'link_u_customize_register');
+add_theme_support('post-thumbnails');
 
-
-function link_u_enqueue_styles() {
-    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css' );
+function jquery_jquery_ui() {
+    if (!is_admin()) {
+     wp_deregister_script('jquery');
+     // Google API (CDN)
+     wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', false, '1.10.1', true);
+     wp_register_script('jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array('jquery'), "1.10.3", true);
+     wp_enqueue_script('jquery');
+     wp_enqueue_script('jquery-ui');
+    }
 }
-add_action( 'wp_enqueue_scripts', 'link_u_enqueue_styles' );
+add_action('init', 'jquery_jquery_ui');
+
+function custom_js(){
+    wp_register_script("custom", get_template_directory_uri()."/js/script.js", array("jquery", "jquery-ui"), "2013.06.14", true);
+    wp_enqueue_script("custom");
+}
+add_action("init", "custom_js"); 
+
+function link_u_scripts(){
+    wp_enqueue_style('link-u-style', get_stylesheet_uri());
+
+    wp_enqueue_style( 'link-u-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'fontawesome', "https://use.fontawesome.com/releases/v5.14.0/css/all.css" );
+    wp_enqueue_script( 'link-u-script', get_stylesheet_directory_uri().'/js/script.js', array('jquery') );
+
+    if(is_home() || is_front_page()){
+        wp_enqueue_style('BXslider', "https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css");
+        wp_enqueue_script( 'BXslider-js','https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery') );
+    }
+    
+    $apiKey = get_theme_mod('Key');
+	if (!empty($apiKey) && is_page_template('page-contact.php')) {
+		wp_enqueue_script( 'gmapApi', 'https://maps.googleapis.com/maps/api/js?key='. $apiKey .'&callback=initMap');
+	}
+}
+add_action('wp_enqueue_scripts', 'link_u_scripts');
 
 
 
