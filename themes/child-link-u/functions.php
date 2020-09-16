@@ -8,6 +8,7 @@ function link_u_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'link_u_enqueue_styles' );
 
 
+
 function link_u_register_sidebars(){
     if(function_exists('register_sidebar')){
         register_sidebar(array(
@@ -57,4 +58,10 @@ function link_u_register_sidebars(){
         ));
     }
 }
-add_action('widgets_init','link_u_register_sidebars');
+        add_action('widgets_init','link_u_register_sidebars');
+        function add_excerpt_to_widget_products( $args ) {
+        global $product;
+        echo '<div class="produc-excerpt">'. $product->get_description(). '</div>';
+        }
+        add_filter('woocommerce_widget_product_item_end', 'add_excerpt_to_widget_products', 10, 1 );
+
