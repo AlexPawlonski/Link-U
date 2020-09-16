@@ -32,6 +32,35 @@ header{
 }
 #logo-site{
     width: 250px;
+
+}
+.site-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+/* OUCOUC */
+/* *******************SIDEBARS********************/
+.sidebar{
+	width: 15%;
+	border: 1px solid cyan;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin:1em;
+}
+.sidebar h3{
+	font-size:1em;
+	width:80%;
+	margin:auto;
+}
+/* OUCOUC */
+
+/***** Main *****/
+#main {
+	width: 1080px;
+	margin: 0 auto;
 }
 #rightHeader{
     display: flex;
@@ -113,6 +142,48 @@ header{
     color:  #3fefe5;
     margin: 2px;
 }
+.sidebar-boutique{
+	border: none;
+	background-color: darkgray;
+}
+/*
+code pour widget téléphone->html personalisé
+<div class="contactTelWidget">
+	<i class="fas fa-phone-alt "></i>
+	<span>0606060606</span>
+</div> */
+
+.contactTelWidget{
+	color: rgb(53, 196, 196);
+	font-weight: bolder;
+	font-size: 1.5em;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	margin:auto;
+}
+.contactTelWidget .fas{
+	width:10%;
+}
+.contactTelWidget span{
+	width:80%;
+}
+.sidebar li{
+	display:flex;
+	flex-direction:column;
+	margin-bottom:1em;
+}
+.sidebar li a{
+	display:flex;
+	flex-direction:column-reverse;
+	justify-content:center;
+}
+.sidebar li a img{
+	margin: auto;
+}
+.sidebar .product-title{
+	text-align:start;
+}
 
 /*BXslider----------------*/
 .bx-wrapper{
@@ -130,6 +201,15 @@ header{
 .woocomerce-fil{
     position: relative;
     max-lines: 1200;
+
+}
+.sidebar .woocommerce-Price-amount,.woocommerce-price-suffix{
+	display:none;
+}
+.produc-excerpt{
+	width:80%;
+	margin:auto;
+	text-justify:justify;
 }
 
 /*FOOTER----------------------*/
@@ -165,10 +245,81 @@ footer #menuFooter{
    font-size: 40px;
 }
 
+/* *************************Qui sommes nous*******************Vincent******** */
+.aboutContent h2 {
+	text-align: center;
+	background-color: rgb(88, 107, 168);
+	padding: 0.3em;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+}
+.aboutContent h2:before{
+	display: none;
+}
+.a
+boutContent .blocks-gallery-item {
+	flex-grow: 0;
+	width: 100%;
+	height: 300px;
+	margin: 1em 0;
+}
 
+.aboutContent .blocks-gallery-item img{
+	border-radius: 10px 10px 0 0;
+	border: 2px white solid;
+}
 
+/* *************************Inspiration*********************Vincent****** */
+.pageHome{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.pageHome h2{
+	text-align: center;
+	background-color: rgb(88, 107, 168);
+	padding: 0.3em;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+}
 
+.pageHome h2:before{
+	display: none;
+}
 
+.pageHome .homeArticle{
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.homeArticle a{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: black;
+	padding: 1em;
+	background-color: rgba(88, 168, 157, 0.096);
+	margin: 1em auto;
+	transition: 0.3s ease-in-out;
+}
+.homeArticle a:hover{
+	background-color: rgb(88, 107, 168);
+	color: white;
+}
+
+.homeArticle h2{
+	width: 100%;
+}
+
+.homeArticle img{
+	width: 150px;
+	height: 150px;
+	border: 2px rgb(88, 107, 168) solid;
+	border-radius: 10px;
+}
 
 /*Merci d'utiliser un seul media screen */
 @media screen and (min-width:1200px){
@@ -176,7 +327,9 @@ footer #menuFooter{
 /*--------NAV pc--------------------*/
 #menuB{
     display: none;
+
 }
+
 #menuPrincipal{
     display: block;
     position: initial;
@@ -190,6 +343,7 @@ footer #menuFooter{
 #menuPrincipal li {
    border-right: 1px solid #3fefe5;
 }
+
 #menuPrincipal li:last-child{
    border: none ;
 
@@ -212,6 +366,5 @@ footer #menuFooter ul{
     display: flex;
     justify-content: space-around;
 }
-
 
 }
