@@ -1,12 +1,4 @@
 jQuery(document).ready(function($){ 
-   
-    /*-----------------bxSLIDER-------------*/
-    $('.bxslider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 1200   
-    });
-
      /*---------------menu---------------*/
     var open;
     $('#menuB').click(function() {
@@ -25,6 +17,5 @@ jQuery(document).ready(function($){
          if($(window).width()< 1200){
              $("#menuPrincipal").css({"display":"none"})
          }
-    });
-        
+    });   
 });

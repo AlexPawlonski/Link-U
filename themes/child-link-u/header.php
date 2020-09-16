@@ -50,7 +50,17 @@
                     if(!empty($img)):?><div><img src="<?php echo wp_get_attachment_url($img);?>" title=""></div><?php endif;
                 }
             }
-             ?></div>
+             ?>
+                <script>
+                    jQuery(document).ready(function($){ 
+                        $('.bxslider').bxSlider({
+                            mode: 'fade',
+                            captions: true,
+                            slideWidth: 1200   
+                        }); 
+                    });
+                </script>
+            </div>
             <?php 
         endif;
         ?>

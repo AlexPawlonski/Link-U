@@ -132,18 +132,35 @@ header{
 /*FOOTER----------------------*/
 footer{
     background-color: #3fefe5;
-    padding:0;
+    padding:10px;
     margin:0;
     display: flex; 
     align-items: center;
+    flex-direction: column;
+    color: white;
 }
 footer a{
     color: white;
 }
 footer #menuFooter{
-    margin: 0 auto;
     text-align: center;
+    margin: 5px;
 }
+
+#reseaux{
+   width: 60%;
+   text-align: center;
+}
+#reseaux div{
+   display: flex;
+   justify-content: space-around;
+}
+#reseaux i{
+   font-size: 40px;
+}
+
+
+
 
 
 
@@ -157,7 +174,6 @@ footer #menuFooter{
 #menuPrincipal{
     display: block;
     position: initial;
-    white: 100%;
 }
 #menuPrincipal ul{
     display: flex;
@@ -166,10 +182,30 @@ footer #menuFooter{
     padding: 5px 30px;
 }
 #menuPrincipal li {
-   border-right: 1px solid rgb(39, 43, 97);
+   border-right: 1px solid #3fefe5;
 }
 #menuPrincipal li:last-child{
    border: none ;
 
 }
+
+/*footer -------------------------*/
+footer{
+    flex-direction: initial;
+}
+
+#reseaux{
+    width: 30%;
+}
+footer #menuFooter{
+    width: 70%;
+    text-align: center;
+    margin: 5px;
+}
+footer #menuFooter ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
 }
