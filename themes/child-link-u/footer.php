@@ -1,5 +1,6 @@
 
         </main>
+
         <footer> 
             <nav id="menuFooter">
             <?php 
@@ -31,6 +32,6 @@
             <?php endif;?>
             <?php wp_footer();?>
         </footer>
-    </div>
+    </div><!-- Fermeture wrapper -->
 </body>
 </html

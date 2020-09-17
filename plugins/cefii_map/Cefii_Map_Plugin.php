@@ -177,7 +177,7 @@ class Cefii_Map_Plugin
 		$map = $this->getmap($att['id']);
 		ob_start();
 		?>
-		<div id="map<?php echo $map[0]->id; ?>" style="width: 400px; height:400px;"></div>
+		<div id="map<?php echo $map[0]->id; ?>" style="width: 100%; height:400px;"></div>
 		<script>
 			function initMap() {
 				// The location of lieu

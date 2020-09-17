@@ -27,19 +27,17 @@
                 <nav id="menuPrincipal">
                     <?php 
                         wp_nav_menu(array(
-                            'sort_column'=>'nemu-order',
-                            'theme_location'=> 'principal'
+                            'sort_column'=>'menu-order',
+                            'menu'=> 'principal'
                         ));
                     ?>
                 </nav>
                 <div id="logo">
-                    <i class="fas fa-shopping-cart"></i>
-                    <i class="fas fa-user"></i>
+                    <a href="<?php echo(wc_get_cart_url()) ?>" title="Mon panier"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>" title="Mon compte"><i class="fas fa-user"></i></a>
                 </div>
             </section>
         </header>  
-        
-        <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">
         <?php
         if(is_home() || is_front_page()):
             ?><ul class="bxslider">
@@ -65,3 +63,5 @@
             <?php 
         endif;
         ?>
+        
+        <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">

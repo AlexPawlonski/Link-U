@@ -1,12 +1,14 @@
 <?php
 get_header();
+?>
+<div class="frontPageWrapper">
+<?php
 // Sidebar gauche
 get_sidebar();
 // Content
 
 // Sidebar gauche
 ?><div class="frontPageContent avecSidebar"><?php
-
 
 // Les dernières actualités
 if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -15,7 +17,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php
 endwhile;
 endif;
+?>
 
-// Les promotions
-// Sidebar droite
+</div><!-- fermeture frontpagewrapper -->
+<?php
 get_footer();

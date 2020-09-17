@@ -42,7 +42,6 @@ header{
 }
 
 
-
 /*NAV------------------*/
 /*--------navbtn------------------------*/
 .ligne{
@@ -176,17 +175,25 @@ code pour widget téléphone->html personalisé
 }
 /* *******************SIDEBARS********************/
 .sidebar{
-	width: 15%;
+    text-align: center;
+	width: 20%;
 	border: 1px solid cyan;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	margin:1em;
 }
+.sidebar table{
+    margin: auto;
+}
 .sidebar h3{
 	font-size:1em;
 	width:80%;
-	margin:auto;
+	margin: 2em ;
+}
+.sidebar img{
+    max-width: 100%;
+    height: auto;
 }
 
 /***** Main *****/
@@ -198,7 +205,7 @@ code pour widget téléphone->html personalisé
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: flex-end;
 }
 /*logo*/
 #logosite img{
@@ -209,7 +216,10 @@ code pour widget téléphone->html personalisé
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
+}
+.search-field{
+    text-align: right;
 }
 #recherche img{
     width: 30px;
@@ -254,7 +264,45 @@ footer #menuFooter{
 #reseaux i{
    font-size: 40px;
 }
+/* *************************Front Page****************Vincent*********** */
+.frontPageWrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.frontPageContent{
+	width: 75%;
+}
+.frontPageContent~h2 {
+	text-align: center;
+	background-color: rgb(88, 107, 168);
+	padding: 0.3em;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+}
+.frontPageContent~h2:before{
+	display: none;
+}
+.wc-block-grid__product-onsale{
+	position: absolute;
+	top: 15%;
+	left: 20%;
+	transform: rotate(-45deg);
+	transform-origin: center;
+}
 
+.wc-block-grid__product-image, .wc-block-grid__product-image img{
+	height: 150px;
+	width: auto;
+}
+.wc-block-grid__product-image img{
+	margin: 1em;
+	width: auto !important;
+}
+.wc-block-grid__product{
+	width: 15%;
+	height: 300px;
+}
 /* *************************Qui sommes nous*******************Vincent******** */
 .aboutContent h2 {
 	text-align: center;
@@ -329,6 +377,106 @@ boutContent .blocks-gallery-item {
 	height: 150px;
 	border: 2px rgb(88, 107, 168) solid;
 	border-radius: 10px;
+}
+/* *************************Contact*******************Vincent******** */
+.contactPage {
+    display:flex;
+    justify-content: space-around;
+}
+.contactContent {
+    width: 50%;
+}
+
+.kontakt input,.kontakt select,.kontakt textarea{
+    border: none;
+}
+
+/* *************************Boutique*******************Antoine******** */
+#logo-site{
+    width: 250px;
+}
+#imageCategory {
+    height: 100px;
+    width: 200px;
+}
+.woocommerce-placeholder {
+    border-radius: 50px;
+}
+li[value*='decoration']>h4 {
+    background-color: rgb(255, 0, 255);
+    width: 70%;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+li[value*='maison']>h4 {
+    background-color: rgb(0, 255, 255);
+    width: 70%;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+li[value*='securite']>h4 {
+    background-color: rgb(255, 174, 0);
+    width: 70%;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+#divBoutique {
+    display: flex;
+}
+#ulBoutique {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-left: 2em;
+    width: 100%;
+}
+#ulBoutique > a {
+    width: 30%;
+}
+#divBoutique > ul > a > li > p {
+    width: 70%;
+}
+#incontournables {
+    color: rgb(0, 9, 139);
+    text-align: center;
+}
+#lienCategoryBoutique {
+    text-decoration: none;
+}
+#pCategory {
+    color: black;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product-type-simple {
+    width: 30%;
+    margin: 1em;
+    text-align: center;
+}
+.attachment-woocommerce_thumbnail {
+    border-radius: 40%;
+}
+#imageFil {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.site-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.woocommerce-LoopProduct-link img {
+    width: 300px;
+    height: 300px;
 }
 
 /*Merci d'utiliser un seul media screen */
