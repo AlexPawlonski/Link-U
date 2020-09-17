@@ -23,8 +23,6 @@ function custom_js(){
 add_action("init", "custom_js"); 
 
 function link_u_scripts(){
-    wp_enqueue_style('link-u-style', get_stylesheet_uri());
-
     wp_enqueue_style( 'link-u-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fontawesome', "https://use.fontawesome.com/releases/v5.14.0/css/all.css" );
     wp_enqueue_script( 'link-u-script', get_stylesheet_directory_uri().'/js/script.js', array('jquery') );

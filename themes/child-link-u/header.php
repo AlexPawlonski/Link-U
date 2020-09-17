@@ -27,8 +27,8 @@
                 <nav id="menuPrincipal">
                     <?php 
                         wp_nav_menu(array(
-                            'sort_column'=>'nemu-order',
-                            'theme_location'=> 'principal'
+                            'sort_column'=>'menu-order',
+                            'menu'=> 'principal'
                         ));
                     ?>
                 </nav>
@@ -37,11 +37,8 @@
                     <i class="fas fa-user"></i>
                 </div>
             </section>
-        </header>  
-        
-        <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">
-        <?php
-        if(is_home() || is_front_page()):
+        </header><?php  
+         if(is_home() || is_front_page()):
             ?><ul class="bxslider">
                 <?php
             for ($i=1; $i < 8; $i++) { 
@@ -65,3 +62,6 @@
             <?php 
         endif;
         ?>
+        <main  id="post-<?php the_ID(); ?>" class=" <?php post_class();?> ">
+        
+       

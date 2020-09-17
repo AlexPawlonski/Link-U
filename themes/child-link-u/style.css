@@ -42,7 +42,6 @@ header{
 }
 
 
-
 /*NAV------------------*/
 /*--------navbtn------------------------*/
 .ligne{
@@ -84,116 +83,6 @@ header{
 #menuPrincipal a:hover{
     background-color:  #3fefe5;
 }
-/*LOGO ITEM---------------*/
-#logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#logo i{
-    font-size: 45px;
-    color:  #3fefe5;
-    margin: 2px;
-}
-.sidebar-boutique{
-	border: none;
-	background-color: darkgray;
-}
-/*
-code pour widget téléphone->html personalisé
-<div class="contactTelWidget">
-	<i class="fas fa-phone-alt "></i>
-	<span>0606060606</span>
-</div> */
-
-.contactTelWidget{
-	color: rgb(53, 196, 196);
-	font-weight: bolder;
-	font-size: 1.5em;
-	display: flex;
-	align-items: center;
-	width: 80%;
-	margin:auto;
-}
-.contactTelWidget .fas{
-	width:10%;
-}
-.contactTelWidget span{
-	width:80%;
-}
-.sidebar li{
-	display:flex;
-	flex-direction:column;
-	margin-bottom:1em;
-}
-.sidebar li a{
-	display:flex;
-	flex-direction:column-reverse;
-	justify-content:center;
-}
-.sidebar li a img{
-	margin: auto;
-}
-.sidebar .product-title{
-	text-align:start;
-}
-
-/*BXslider----------------*/
-.bx-wrapper{
-    margin: 0;
-    border: 0;
-    box-shadow: none;
-    z-index:100
-}
-.bx-pager{
-    display: none;
-}
-
-/*Fil d'ariane woocomerce----*/
-
-.woocomerce-fil{
-    position: relative;
-    max-lines: 1200;
-
-}
-.sidebar .woocommerce-Price-amount,.woocommerce-price-suffix{
-	display:none;
-}
-.produc-excerpt{
-	width:80%;
-	margin:auto;
-	text-justify:justify;
-}
-/*MAIN WOOCOMMERCE----------------------------*/
-.woocommerce .content-area .site-main{
-    max-width: 1200px !important;
-}
-.content-area{
-    margin: 5px !important;
-}
-#main{
-    width: 100% !important;
-}
-/* *******************SIDEBARS********************/
-.sidebar{
-	width: 15%;
-	border: 1px solid cyan;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin:1em;
-}
-.sidebar h3{
-	font-size:1em;
-	width:80%;
-	margin:auto;
-}
-
-/***** Main *****/
-#main {
-	width: 1080px;
-	margin: 0 auto;
-}
 #rightHeader{
     display: flex;
     width: 100%;
@@ -222,38 +111,118 @@ code pour widget téléphone->html personalisé
     display: none;
 }
 
-/*FOOTER----------------------*/
-footer{
-    background-color: #3fefe5;
-    padding:10px;
-    margin:0;
-    display: flex; 
+
+/*LOGO ITEM---------------*/
+#logo{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    color: white;
 }
-footer a{
-    color: white;
-}
-footer a:hover{
-    color: rgb(52, 77, 140);
-}
-footer #menuFooter{
-    text-align: center;
-    margin: 5px;
+#logo i{
+    font-size: 45px;
+    color:  #3fefe5;
+    margin: 2px;
 }
 
-#reseaux{
-   width: 60%;
-   text-align: center;
+
+/*BXslider----------------*/
+.bx-wrapper{
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    z-index:100
 }
-#reseaux div{
-   display: flex;
-   justify-content: space-around;
+.bx-pager{
+    display: none;
 }
-#reseaux i{
-   font-size: 40px;
+
+/*Fil d'ariane woocomerce----*/
+
+.woocomerce-fil{
+    position: relative;
+    max-lines: 1200;
+
 }
+
+/* *******************SIDEBARS********************/
+/*MAIN SIDE BAR*************************************/
+.avecSidebar{
+    width: 80%;
+}
+
+/******************************************************/
+.sidebar{
+	width: 20%;
+	border: 1px solid cyan;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin:1em;
+}
+.sidebar h3{
+	font-size:1em;
+	width:80%;
+	margin:auto;
+}
+.sidebar-boutique{
+	border: none;
+	background-color: darkgray;
+}
+.sidebar li{
+	display:flex;
+	flex-direction:column;
+	margin-bottom:1em;
+}
+.sidebar li a{
+	display:flex;
+	flex-direction:column-reverse;
+    justify-content:center;
+    
+}
+.sidebar li a img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.sidebar .product-title{
+	text-align:start;
+}
+.sidebar .woocommerce-Price-amount,.woocommerce-price-suffix{
+	display:none;
+}
+.produc-excerpt{
+	width:80%;
+	margin:auto;
+	text-justify:justify;
+}
+.contactTelWidget{
+	color: rgb(53, 196, 196);
+	font-weight: bolder;
+	font-size: 1.5em;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	margin:auto;
+}
+.contactTelWidget .fas{
+	width:10%;
+}
+.contactTelWidget span{
+	width:80%;
+}
+
+/*MAIN WOOCOMMERCE----------------------------*/
+.woocommerce .content-area .site-main{
+    max-width: 1200px !important;
+}
+.content-area{
+    margin: 5px !important;
+}
+#main{
+    width: 100% !important;
+}
+
+
 
 /* *************************Qui sommes nous*******************Vincent******** */
 .aboutContent h2 {
@@ -329,6 +298,40 @@ boutContent .blocks-gallery-item {
 	height: 150px;
 	border: 2px rgb(88, 107, 168) solid;
 	border-radius: 10px;
+}
+
+
+/*FOOTER----------------------*/
+footer{
+    background-color: #3fefe5;
+    padding:10px;
+    margin:0;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgb(52, 77, 140);
+}
+footer #menuFooter{
+    text-align: center;
+    margin: 5px;
+}
+
+#reseaux{
+   width: 60%;
+   text-align: center;
+}
+#reseaux div{
+   display: flex;
+   justify-content: space-around;
+}
+#reseaux i{
+   font-size: 40px;
 }
 
 /*Merci d'utiliser un seul media screen */

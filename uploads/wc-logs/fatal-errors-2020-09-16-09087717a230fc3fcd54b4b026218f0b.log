@@ -1,0 +1,10 @@
+2020-09-16T09:33:15+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php à la ligne 95
+
+2020-09-16T09:35:15+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php à la ligne 95
+
+2020-09-16T12:37:04+00:00 CRITICAL syntax error, unexpected 'wp_enqueue_style' (T_STRING) dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php à la ligne 26
+
+2020-09-16T12:39:04+00:00 CRITICAL syntax error, unexpected 'wp_enqueue_style' (T_STRING) dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php à la ligne 26
+
+2020-09-16T12:41:04+00:00 CRITICAL syntax error, unexpected 'wp_enqueue_style' (T_STRING) dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php à la ligne 26
+

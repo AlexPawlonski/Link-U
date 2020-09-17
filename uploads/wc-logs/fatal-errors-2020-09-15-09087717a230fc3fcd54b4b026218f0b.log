@@ -1,0 +1,65 @@
+2020-09-15T07:31:28+00:00 CRITICAL require_once(): Failed opening required 'inc/customize.php' (include_path='.;C:\php\pear') dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php à la ligne 3
+
+2020-09-15T10:25:27+00:00 CRITICAL syntax error, unexpected '}' dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php à la ligne 61
+
+2020-09-15T10:25:34+00:00 CRITICAL syntax error, unexpected '}' dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php à la ligne 61
+
+2020-09-15T11:45:27+00:00 CRITICAL syntax error, unexpected '<', expecting end of file dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\header.php à la ligne 14
+
+2020-09-15T14:34:28+00:00 CRITICAL Uncaught Error: Call to a member function add_setting() on null in C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php:117
+Stack trace:
+#0 C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php(3): require_once()
+#1 C:\wamp64\www\ProjetWPLink-U\wp-settings.php(514): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\ProjetWPLink-U\wp-config.php(99): require_once('C:\\wamp64\\www\\P...')
+#3 C:\wamp64\www\ProjetWPLink-U\wp-load.php(37): require_once('C:\\wamp64\\www\\P...')
+#4 C:\wamp64\www\ProjetWPLink-U\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\P...')
+#5 C:\wamp64\www\ProjetWPLink-U\index.php(17): require('C:\\wamp64\\www\\P...')
+#6 {main}
+  thrown dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php à la ligne 117
+
+2020-09-15T14:34:36+00:00 CRITICAL Uncaught Error: Call to a member function add_setting() on null in C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php:117
+Stack trace:
+#0 C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php(3): require_once()
+#1 C:\wamp64\www\ProjetWPLink-U\wp-settings.php(514): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\ProjetWPLink-U\wp-config.php(99): require_once('C:\\wamp64\\www\\P...')
+#3 C:\wamp64\www\ProjetWPLink-U\wp-load.php(37): require_once('C:\\wamp64\\www\\P...')
+#4 C:\wamp64\www\ProjetWPLink-U\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\P...')
+#5 C:\wamp64\www\ProjetWPLink-U\index.php(17): require('C:\\wamp64\\www\\P...')
+#6 {main}
+  thrown dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php à la ligne 117
+
+2020-09-15T14:35:55+00:00 CRITICAL Uncaught Error: Call to a member function add_setting() on null in C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php:118
+Stack trace:
+#0 C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\functions.php(3): require_once()
+#1 C:\wamp64\www\ProjetWPLink-U\wp-settings.php(514): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\ProjetWPLink-U\wp-config.php(99): require_once('C:\\wamp64\\www\\P...')
+#3 C:\wamp64\www\ProjetWPLink-U\wp-load.php(37): require_once('C:\\wamp64\\www\\P...')
+#4 C:\wamp64\www\ProjetWPLink-U\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\P...')
+#5 C:\wamp64\www\ProjetWPLink-U\index.php(17): require('C:\\wamp64\\www\\P...')
+#6 {main}
+  thrown dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\inc\customize.php à la ligne 118
+
+2020-09-15T14:46:20+00:00 CRITICAL syntax error, unexpected ':' dans C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\footer.php à la ligne 16
+
+2020-09-15T14:57:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_filter(), 1 passed in C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\header.php on line 41 and at least 2 expected in C:\wamp64\www\ProjetWPLink-U\wp-includes\plugin.php:108
+Stack trace:
+#0 C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\header.php(41): add_filter('woocommerce_bre...')
+#1 C:\wamp64\www\ProjetWPLink-U\wp-includes\template.php(730): require_once('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\ProjetWPLink-U\wp-includes\template.php(676): load_template('C:\\wamp64\\www\\P...', true, Array)
+#3 C:\wamp64\www\ProjetWPLink-U\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\wamp64\www\ProjetWPLink-U\wp-content\plugins\woocommerce\templates\archive-product.php(20): get_header('shop')
+#5 C:\wamp64\www\ProjetWPLink-U\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\P...')
+#6 C:\wamp64\www\ProjetWPLink-U\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\P...')
+#7 C:\w dans C:\wamp64\www\ProjetWPLink-U\wp-includes\plugin.php à la ligne 108
+
+2020-09-15T14:57:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_filter(), 1 passed in C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\header.php on line 41 and at least 2 expected in C:\wamp64\www\ProjetWPLink-U\wp-includes\plugin.php:108
+Stack trace:
+#0 C:\wamp64\www\ProjetWPLink-U\wp-content\themes\child-link-u\header.php(41): add_filter('woocommerce_bre...')
+#1 C:\wamp64\www\ProjetWPLink-U\wp-includes\template.php(730): require_once('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\ProjetWPLink-U\wp-includes\template.php(676): load_template('C:\\wamp64\\www\\P...', true, Array)
+#3 C:\wamp64\www\ProjetWPLink-U\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\wamp64\www\ProjetWPLink-U\wp-content\plugins\woocommerce\templates\archive-product.php(20): get_header('shop')
+#5 C:\wamp64\www\ProjetWPLink-U\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\P...')
+#6 C:\wamp64\www\ProjetWPLink-U\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\P...')
+#7 C:\w dans C:\wamp64\www\ProjetWPLink-U\wp-includes\plugin.php à la ligne 108
+
